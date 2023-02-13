@@ -1,0 +1,28 @@
+{
+  "name": "whites-woods-map",
+  "version": "1.0.0",
+  "description": "interactive web map of whites woods recreation area",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-transformer-geojson": "^0.0.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^4.6.2",
+    "esri-leaflet": "^3.0.10",
+    "esri-leaflet-vector": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.3",
+    "leaflet": "^1.9.3",
+    "leaflet-betterscale": "^1.0.0",
+    "leaflet-fullscreen": "^1.0.2",
+    "leaflet.locatecontrol": "^0.79.0",
+    "leaflet.zoomhome": "^1.0.0"
+  }
+}
