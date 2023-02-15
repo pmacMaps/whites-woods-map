@@ -5,16 +5,14 @@ import 'bootstrap';
 import { map } from 'leaflet';
 import 'leaflet-fullscreen';
 // app modules
-//import './ui.js';
+import './ui.js';
 import { initZoom, homeCoords} from './constants.js';
 import { imageryWithLabels } from './basemaps.js';
 import { zoomHomeControl, layerControlUI, scaleBarControl, locateControl} from './mapControls.js';
 import { usgsContours } from './overlays.js';
-/*
-import { hikingTrails } from './hikingTrails.js';
-
+//import { hikingTrails } from './hikingTrails.js';
 import { changeLayerControlLocation } from './functions.js';
-*/
+
 
 /*** Map & Controls ***/
 const webmap = map('map', {
@@ -41,4 +39,4 @@ locateControl.addTo(webmap);
 usgsContours.addTo(webmap);
 
 // change where layer widget is located
-//changeLayerControlLocation();
+changeLayerControlLocation();

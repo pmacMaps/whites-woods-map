@@ -27,7 +27,6 @@ export const setPopupMaxWidth = (windowWidth) => {
 }
 
 // place layer control widget in modal accessed from navigation
-/*
 export const changeLayerControlLocation = () => {
     // DOM element parent for layer control
     const layerControlParent = document.querySelectorAll('div.leaflet-top.leaflet-right')[0]
@@ -40,4 +39,3 @@ export const changeLayerControlLocation = () => {
     // add layer control widget in new DOM element
     newLayerControlParent.appendChild(removedLayerControlUI);
 }
-*/
