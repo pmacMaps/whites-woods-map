@@ -1,0 +1,124 @@
+/* imports */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import '../node_modules/leaflet/dist/leaflet.css';
+@import '../node_modules/leaflet.zoomhome/src/css/leaflet.zoomhome.css';
+@import '../node_modules/leaflet.locatecontrol/dist/L.Control.Locate.min.css';
+@import '../node_modules/leaflet-betterscale/L.Control.BetterScale.css';
+@import '../node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css';
+
+/*** General Properties ***/
+html,
+body,
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+header h1,
+div.modal-header,
+div.modal-header > button > span,
+div.modal-footer {
+    color: #fff;
+}
+
+/* fix nav hanging over map */
+body {
+    padding-top: 51px;
+}
+
+/*** Header & Nav ***/
+header {
+    max-height: 51px;
+}
+
+header h1 {
+    margin-top: -5px;
+}
+
+.navbar,
+div.modal-header,
+div.modal-footer {
+    background-color: #52655B;
+}
+
+nav ul.dropdown.dropdown-menu {
+    right: 10px;
+    left: inherit;
+}
+
+nav button.dropdown-toggle {
+    color: #000;
+    background-color: #fff;
+    padding: 0.25em;
+    margin-top: -10px;
+}
+
+/*** Modals ***/
+div.modal-body {
+    min-height: 225px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+div.modal-header > button,
+div.modal-header > button.close:not(:disabled):not(.disabled):hover,
+div.modal-header > button > span,
+div.modal-header > button > span:hover {
+    opacity: 1;
+}
+
+div.modal-header > button > span:hover {
+    color: #FFFF00;
+    text-shadow: none;
+}
+
+div.modal-footer button {
+    background-color: #000;
+}
+
+div.modal-footer button:hover {
+    background-color: #FFFF00;
+    color: #000;
+}
+
+#basemapModal div.modal-body p {
+    margin-bottom: 25px;
+}
+
+/*** Leaflet Controls ***/
+.leaflet-control-locate a {
+    color: #000;
+}
+
+div.leaflet-bottom.leaflet-left {
+    bottom: 2em;
+}
+
+/*** Layer Tooltip ***/
+.feat-tooltip {
+    font-weight: bold;
+}
+
+/*** Layer Popup ***/
+.feat-popup {
+    font-size: 1.1em;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.feat-popup h3 {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/*** Media Query ***/
+/* 314px */
+@media screen and (max-width: 314px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+/* 767px */
+@media screen and (max-width: 767px) {
+}
