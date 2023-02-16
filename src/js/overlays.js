@@ -13,7 +13,7 @@ export const hikingTrails = geoJson(data, {
         return {
             color: '#FFFF00',
             weight: 4,
-            das,hArray: '4 4'
+            dashArray: '4 4'
         }
     }
 });

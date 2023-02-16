@@ -8,9 +8,9 @@ export const reduceNumberDecimals = (data) => {
 export const setInitialMapZoom = (windowWidth) => {
     let mapZoom;
     if (windowWidth < 500) {
-        mapZoom = 14;
-    } else {
         mapZoom = 15;
+    } else {
+        mapZoom = 16;
     }
     return mapZoom;
 }
