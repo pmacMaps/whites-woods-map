@@ -26,9 +26,15 @@ const esriOsmTerrain = vectorBasemapLayer('OSM:StandardRelief', {
     apikey: esriKey
 });
 
+// Esri Imagery w/ Labels
+const esriImageryLabels = vectorBasemapLayer('ArcGIS:Imagery', {
+    apikey: esriKey
+});
+
 // basemap layers for control
 // used to hydrate layer control widget
 export const basemapLayers = {
     "Satellite Imagery": imageryWithLabels,
     "Topographic": esriOsmTerrain,
+    "Esri Imagery": esriImageryLabels
 };
